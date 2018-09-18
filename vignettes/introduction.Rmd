@@ -1,0 +1,25 @@
+---
+title: "myfunc"
+author: "xxx"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+# head 1
+## heading 2
+```{r}
+ x<-matrix(rnorm(100),ncol=10)
+ top5(x,2)
+
+```
+
